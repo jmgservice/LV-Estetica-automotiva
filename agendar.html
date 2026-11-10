@@ -92,7 +92,7 @@ input,.field{width:100%;padding:12px 14px;background:var(--graphite);border:1px 
 
   <!-- ETAPA 1: serviços (o cliente pode escolher mais de um) -->
   <div class="step is-active" id="step-service">
-    <p class="svc-hint">Você pode escolher mais de um serviço — use os botões <strong>+</strong> e <strong>−</strong> em cada card para adicionar quantos precisar (ex.: lavagem + Jet Cera, ou 2 lavagens de veículos diferentes na mesma entrada). O Jet Cera é um adicional à lavagem.</p>
+    <p class="svc-hint">Você pode escolher mais de um serviço — use os botões <strong>+</strong> e <strong>−</strong> em cada card para adicionar quantos precisar (ex.: lavagem + Jet Cera, ou 2 lavagens de veículos diferentes na mesma entrada). O Jet Cera e o adicional de Sujeira Pesada (+ R$ 10,00, para veículos muito sujos) são adicionais à lavagem.</p>
     <div class="card-grid" id="serviceList"></div>
     <div class="svc-summary">
       <div class="svc-summary__text" id="svcSummaryText">Nenhum serviço selecionado</div>
@@ -165,7 +165,7 @@ const SERVICES = [
   { id:'lavagem-suv', name:'Lavagem — SUV (Promoção de novembro)', durationLabel:'Duração a confirmar', price:70.00 },
   { id:'lavagem-camionete', name:'Lavagem — Camionete (Promoção de novembro)', durationLabel:'Duração a confirmar', price:90.00 },
   { id:'jet-cera', name:'Jet Cera — Adicional à lavagem', durationLabel:'Duração a confirmar', price:15.00 },
-  { id:'cera-tecnica', name:'Cera Técnica', durationLabel:'Duração a confirmar', price:80.00 },
+  { id:'sujeira-pesada', name:'Sujeira Pesada — Adicional (veículo muito sujo)', durationLabel:'Duração a confirmar', price:10.00 },
 ];
 /* Capacidade única: 1 veículo por horário de entrada, em todos os serviços —
  * é uma baia só. Os horários são gerados a partir do EXPEDIENTE abaixo e
