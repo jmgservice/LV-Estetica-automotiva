@@ -212,12 +212,12 @@ function generateSlots(dateStr, stepMinutes){
  * CONFIGURAÇÃO CENTRAL DA ESTÉTICA
  * Único lugar do arquivo com dados específicos deste cliente.
  * Em produção (ex.: Next.js) isso vira uma env var:
- *   NEXT_PUBLIC_WHATSAPP_ESTETICA=5500000000000
+ *   NEXT_PUBLIC_WHATSAPP_ESTETICA=5554992657516
  * lida via process.env.NEXT_PUBLIC_WHATSAPP_ESTETICA.
  * =======================================================*/
 const CONFIG = {
   empresaNome: 'LV Estética Automotiva',
-  whatsappEstetica: '5500000000000', // [PLACEHOLDER] substitua pelo WhatsApp real da LV Estética, número do PROPRIETÁRIO
+  whatsappEstetica: '5554992657516', // [PLACEHOLDER] substitua pelo WhatsApp real da LV Estética, número do PROPRIETÁRIO
 };
 
 function getAppointments(){ return JSON.parse(localStorage.getItem('lv_appointments')||'[]'); }
