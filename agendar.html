@@ -3,12 +3,23 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Agendar Horário — LV Estética Automotiva</title>
-<meta name="description" content="Agende online seu horário na LV Estética Automotiva em Passo Fundo - RS. Escolha o serviço, o dia e o horário de entrada do veículo.">
+<title>Agendar Lavagem em Passo Fundo - RS | LV Estética Automotiva</title>
+<meta name="description" content="Agende online sua lavagem na LV Estética Automotiva, em Passo Fundo - RS. Escolha o serviço, o dia e o horário de entrada do veículo.">
 <meta name="robots" content="index, follow">
-<!-- [DOMÍNIO DO SITE] — substitua pela URL final do site assim que o domínio for definido -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="LV Estética Automotiva">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:title" content="Agendar Lavagem em Passo Fundo - RS | LV Estética Automotiva">
+<meta property="og:description" content="Agende online sua lavagem na LV Estética Automotiva, em Passo Fundo - RS.">
+<meta property="og:url" content="[DOMÍNIO DO SITE]/agendar.html">
+<meta property="og:image" content="[DOMÍNIO DO SITE]/img/og-lv-estetica-automotiva.jpg">
+<meta name="theme-color" content="#04070D">
 <link rel="canonical" href="[DOMÍNIO DO SITE]/agendar.html">
-<link rel="icon" type="image/png" href="logo-lv.png">
+<link rel="icon" type="image/png" sizes="192x192" href="favicon-lv.png">
+<link rel="apple-touch-icon" href="favicon-lv.png">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Início", "item": "[DOMÍNIO DO SITE]/"}, {"@type": "ListItem", "position": 2, "name": "Agendar lavagem", "item": "[DOMÍNIO DO SITE]/agendar.html"}]}
+</script>
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
 <style>
 :root{
@@ -78,7 +89,7 @@ input,.field{width:100%;padding:12px 14px;background:var(--graphite);border:1px 
 <body>
 <div class="topbar">
   <a href="index.html#topo" class="topbar__brand">
-    <img src="logo-lv.png" alt="LV Estética Automotiva">
+    <img src="img/logo-lv.webp" alt="LV Lavagem e Estética Automotiva — Passo Fundo" width="900" height="302">
     LV
   </a>
   <a href="index.html#localizacao" class="topbar__back">
@@ -87,7 +98,7 @@ input,.field{width:100%;padding:12px 14px;background:var(--graphite);border:1px 
   </a>
 </div>
 <div class="wrap">
-  <h1>Agendar horário</h1>
+  <h1>Agendar lavagem em Passo Fundo</h1>
   <p class="sub">Escolha o serviço e o horário de entrada do veículo — todo o agendamento é feito direto aqui pelo site. Atendemos de segunda a sexta das 8h às 12h e das 13h às 18h, e aos sábados das 9h às 12h. Cada horário atende 1 veículo por vez; a duração de cada serviço varia conforme o trabalho e pode se estender além do horário de entrada — combinamos a retirada com você.</p>
 
   <!-- ETAPA 1: serviços (o cliente pode escolher mais de um) -->
@@ -164,6 +175,7 @@ const SERVICES = [
   { id:'lavagem-carro-pequeno', name:'Lavagem — Carros Pequenos (Promoção de novembro)', durationLabel:'Duração a confirmar', price:50.00 },
   { id:'lavagem-suv', name:'Lavagem — SUV (Promoção de novembro)', durationLabel:'Duração a confirmar', price:70.00 },
   { id:'lavagem-camionete', name:'Lavagem — Camionete (Promoção de novembro)', durationLabel:'Duração a confirmar', price:90.00 },
+  { id:'lavagem-moto', name:'Lavagem — Moto', durationLabel:'Duração a confirmar', price:30.00 },
   { id:'jet-cera', name:'Jet Cera — Adicional à lavagem', durationLabel:'Duração a confirmar', price:15.00 },
   { id:'sujeira-pesada', name:'Sujeira Pesada — Adicional (veículo muito sujo)', durationLabel:'Duração a confirmar', price:10.00 },
 ];
