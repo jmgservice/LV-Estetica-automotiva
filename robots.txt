@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: [DOMÍNIO DO SITE]/sitemap.xml
+Sitemap: https://lvesteticaautomotiva.vercel.app/sitemap.xml
