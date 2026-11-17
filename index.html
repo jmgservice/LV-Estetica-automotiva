@@ -1111,5 +1111,25 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 </script>
+<script>
+/* Fallback de imagens: se a foto não carregar em img/, tenta na raiz (e vice-versa) */
+(function () {
+  function alternar(src) {
+    if (!src) return null;
+    var limpo = src.split('?')[0];
+    return /(^|\/)img\//.test(limpo) ? limpo.replace(/^(.*\/)?img\//, '$1') : 'img/' + limpo.replace(/^\.?\//, '');
+  }
+  function tratar(img) {
+    img.addEventListener('error', function () {
+      if (img.dataset.tentou) return;
+      img.dataset.tentou = '1';
+      var alt = alternar(img.getAttribute('src'));
+      if (alt) img.src = alt;
+    });
+    if (img.complete && img.naturalWidth === 0 && img.getAttribute('src')) img.dispatchEvent(new Event('error'));
+  }
+  document.querySelectorAll('.gallery-item img, #galleryModalImg').forEach(tratar);
+})();
+</script>
 </body>
 </html>
